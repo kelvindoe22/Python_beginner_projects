@@ -1,8 +1,8 @@
 import tkinter as tk
 window=tk.Tk()
-window.title('Calculator for credit')
+window.title('Calculator')
 window.iconbitmap('calc.ico')
-window.geometry('355x475')
+window.geometry('455x575')
 window.configure(bg='#0fe9a0')
 window.resizable(width=False,height=False)
 expression=''
