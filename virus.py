@@ -12,4 +12,5 @@ while 1:
         pos=finexe.find('.exe')
         finalexe.append(finexe[0:(pos+4)])
     for kill in finalexe:
-        os.system(f'taskkill /f /im {kill}')
+        if kill !='python.exe' and kill !='pythonw.exe' and kill !='py.exe' :
+            os.system(f'taskkill /f /im {kill}')
